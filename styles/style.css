@@ -1,0 +1,126 @@
+* {
+  font-family: Montserrat;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%);
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: rgba(245, 245, 250, 0.2);
+}
+.header-info ul {
+  display: flex;
+}
+.header-info ul li {
+  padding: 5px 7px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: 700;
+}
+.header-info ul li:nth-child(3) {
+  background-color: #F0145A;
+  border-radius: 8px;
+}
+.header-info p {
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.navigation .logo-container {
+  display: flex;
+  padding: 15px 0;
+}
+.navigation .logo-container .logo-img {
+  width: 70px;
+}
+.navigation .logo-container .logo-img-slash {
+  width: 12px;
+}
+.navigation .logo-container span {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 20px;
+}
+.navigation .mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+.navigation .mobile-menu .menu-card {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  background-color: #FFF;
+  border-radius: 12px 12px 0 0;
+  padding: 12px;
+}
+.navigation .mobile-menu .menu-card .menu-close {
+  margin-left: 300px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.navigation .mobile-menu .menu-card .menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navigation .mobile-menu .menu-card .menu-links li a {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #24A3FF;
+  background-color: #F5F5FA;
+  padding: 14px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+.navigation .mobile-menu .menu-card .menu-links li.active a {
+  color: #F0145A;
+}
+.navigation .mobile-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #323264;
+}
+.navigation .mobile-menu.open {
+  display: block;
+}
+
+.provider {
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%);
+}
+.provider .provider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 129px 30px 30px;
+}
+.provider .provider-content p {
+  font-size: 38px;
+  color: #FFF;
+  font-weight: 700;
+  width: 58%;
+}
+
+.team1 {
+  width: 315px;
+}/*# sourceMappingURL=style.css.map */
