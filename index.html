@@ -17,12 +17,17 @@
 <body>
     <header>
         <div class="header-info">
-            <ul>
+            <ul class="lang">
                 <li>УК</li>
                 <li>РУ</li>
                 <li>EN</li>
             </ul>
             <p>0800 211 927</p>
+            <ul class="info">
+                <li>Kyiv, Mechnikova str., 14/1</li>
+                <li>0800 211 927</li>
+                <li><img src="./img/facebook-header.svg" alt="facebook"></li>
+            </ul>
         </div>
         <div class="navigation">
             <div class="logo-container">
@@ -32,19 +37,30 @@
                 </a>
                 <span>home</span>
             </div>
-            <div>
+            <div class="burger-menu">
                 <img id="burger" src="./img/hamburger.svg" alt="menu">
                 <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-modal="true">
                     <div class="menu-card">
                       <img id="menuClose" class="menu-close" src="./img/exit.svg" alt="close">
                       <ul class="menu-links">
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">publications</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="./pages/about.html">about us</a></li>
+                        <li><a href="./pages/services.html">services</a></li>
+                        <li><a href="./pages/team.html">team</a></li>
+                        <li><a href="./pages/publications.html">publications</a></li>
+                        <li><a href="./pages/contact.html">contact</a></li>
                       </ul>
                     </div>
+                </nav>
+            </div>
+            <div class="desktop-nav">
+                <nav>
+                    <ul>
+                        <li><a href="./pages/about.html">about us</a></li>
+                        <li><a href="./pages/services.html">services</a></li>
+                        <li><a href="./pages/team.html">team</a></li>
+                        <li><a href="./pages/publications.html">publications</a></li>
+                        <li><a href="./pages/contact.html">contact</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -53,7 +69,6 @@
         <div class="provider-content">
             <p>you legal solutions provider</p>
             <img class="scroll-button" src="./img/scroll-button.svg" alt="scroll-button">
-            <!-- <img class="symbol" src="./img/symbol.png" alt="logo"> -->
         </div>
         <div class="provider-info">
             <ul class="provider-list">
@@ -109,8 +124,10 @@
             </div>
         </div>
     </section>
-    <div class="shadow"></div>
-    <div class="shadow-light"></div>
+    <div class="shadow-container">
+        <div class="shadow"></div>
+        <div class="shadow-light"></div>
+    </div>
     <section class="team">
         <div class="team-card">
             <img class="team1" src="./img/team1.png" alt="team1">
@@ -139,6 +156,12 @@
             <li><img src="./img/3dlook-logo.png" alt="logo"></li>
             <li><img src="./img/orangear-logo.png" alt="logo"></li>
             <li><img src="./img/adtellige-logo.png" alt="logo"></li>
+            <li class="tablet"><img src="./img/clickky-logo.png" alt="logo"></li>
+            <li class="tablet"><img src="./img/ecolease-logo.png" alt="log"></li>
+            <li class="tablet"><img src="./img/infratek-logo.png" alt="logo"></li>
+            <li class="tablet"><img src="./img/citypark-logo.png" alt="logo"></li>
+            <li class="tablet"><img src="./img/artprint-logo.png" alt="logo"></li>
+            <li class="tablet"><img src="./img/ultimatecard-logo.png" alt="logo"></li>
         </ul>
     </section>
     <section class="publications">
@@ -152,7 +175,7 @@
         <div class="publications-cards">
             <div class="publications-card">
                 <img src="./img/cover1.png" alt="cover">
-                <div class="publications-card-text">
+                <div class="publications-card-text first">
                     <p class="publications-card-text-title">Equity associate</p>
                     <p class="publications-card-text-date">April 22</p>
                     <p class="publications-card-text-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
@@ -166,9 +189,9 @@
                     <p class="publications-card-text-description">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                 </div>
             </div>
-            <div class="publications-card">
+            <div class="publications-card third">
                 <img src="./img/cover3.png" alt="cover">
-                <div class="publications-card-text">
+                <div class="publications-card-text third">
                     <p class="publications-card-text-title">Millennial Testament</p>
                     <p class="publications-card-text-date">August 19</p>
                     <p class="publications-card-text-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
@@ -177,14 +200,28 @@
         </div>
     </section>
     <footer>
-        <ul>
+        <ul class="footer-mobile">
             <li>Kyiv, Mechnikova str., 14/1</li>
             <li>On map</li>
             <li><img src="./img/facebook-footer.svg" alt="facebook"></li>
             <li>0800 211 927</li>
             <li>contact@forstudy.space</li>
         </ul>
-        <p>© 2021 HLEGAL Law company, LLC</p>
+        <p class="footer-mobile-text">© 2021 HLEGAL Law company, LLC</p>
+        <div class="footer-tablet">
+            <div>
+                <ul class="footer-tablet-adress">
+                    <li>Kyiv, Mechnikova str, 14/1</li>
+                    <li>On map</li>
+                </ul>
+                <ul class="footer-tablet-contact">
+                    <li><img src="./img/facebook-footer.svg" alt="facebook"></li>
+                    <li>0800 211 927</li>
+                    <li>contact@forstudy.space</li>
+                </ul>
+            </div>
+            <p class="footer-tablet-text">© 2021 HLEGAL Law company, LLC</p>
+        </div>
     </footer>
 </body>
 </html>
