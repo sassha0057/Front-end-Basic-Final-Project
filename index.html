@@ -15,7 +15,7 @@
     <title>Homepage</title>
 </head>
 <body>
-    <header>
+    <header class="header-mobile">
         <div class="header-info">
             <ul class="lang">
                 <li>УК</li>
@@ -63,6 +63,30 @@
                     </ul>
                 </nav>
             </div>
+        </div>
+    </header>
+    <header class="header-desktop">
+        <div class="header-desktop-logo">
+            <a href="./index.html">
+                <img class="logo-img" src="./img/logo-white.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header-desktop-nav">
+            <ul class="header-desktop-info">
+                <li>УК</li>
+                <li>РУ</li>
+                <li>EN</li>
+                <li>Kyiv, Mechnikova str, 14/1</li>
+                <li>0800 211 927</li>
+                <li><img src="./img/facebook-header.svg" alt="facebook"></li>
+            </ul>
+            <ul class="header-desktop-nav-list">
+                <li><a href="./pages/about.html">about us</a></li>
+                <li><a href="./pages/services.html">services</a></li>
+                <li><a href="./pages/team.html">team</a></li>
+                <li><a href="./pages/publications.html">publications</a></li>
+                <li><a href="./pages/contact.html">contact</a></li>
+            </ul>
         </div>
     </header>
     <section class="provider">
@@ -149,20 +173,44 @@
     </section>
     <section class="trust">
         <p>They already trust us</p>
-        <ul>
-            <li><img src="./img/hillel-logo.png" alt="logo"></li>
-            <li><img src="./img/wannabiz-logo.png" alt="logo"></li>
-            <li><img src="./img/tapgerine-logo.png" alt="logo"></li>
-            <li><img src="./img/3dlook-logo.png" alt="logo"></li>
-            <li><img src="./img/orangear-logo.png" alt="logo"></li>
-            <li><img src="./img/adtellige-logo.png" alt="logo"></li>
-            <li class="tablet"><img src="./img/clickky-logo.png" alt="logo"></li>
-            <li class="tablet"><img src="./img/ecolease-logo.png" alt="log"></li>
-            <li class="tablet"><img src="./img/infratek-logo.png" alt="logo"></li>
-            <li class="tablet"><img src="./img/citypark-logo.png" alt="logo"></li>
-            <li class="tablet"><img src="./img/artprint-logo.png" alt="logo"></li>
-            <li class="tablet"><img src="./img/ultimatecard-logo.png" alt="logo"></li>
-        </ul>
+        <div class="trust-container">
+            <div class="trust-item first">
+                <img src="./img/hillel-logo.png" alt="logo">
+            </div>
+            <div class="trust-item second">
+                <img src="./img/wannabiz-logo.png" alt="logo">
+            </div>
+            <div class="trust-item third">
+                <img src="./img/tapgerine-logo.png" alt="logo">
+            </div>
+            <div class="trust-item fourth">
+                <img src="./img/3dlook-logo.png" alt="logo">
+            </div>
+            <div class="trust-item five">
+                <img src="./img/orangear-logo.png" alt="logo">
+            </div>
+            <div class="trust-item six">
+                <img src="./img/adtellige-logo.png" alt="logo">
+            </div>
+            <div class="trust-item tablet first">
+                <img src="./img/clickky-logo.png" alt="logo">
+            </div>
+            <div class="trust-item tablet second">
+                <img src="./img/ecolease-logo.png" alt="log">
+            </div>
+            <div class="trust-item tablet third">
+                <img src="./img/infratek-logo.png" alt="logo">
+            </div>
+            <div class="trust-item tablet fourth">
+                <img src="./img/citypark-logo.png" alt="logo">
+            </div>
+            <div class="trust-item tablet five">
+                <img src="./img/artprint-logo.png" alt="logo">
+            </div>
+            <div class="trust-item tablet six">
+                <img src="./img/ultimatecard-logo.png" alt="logo">
+            </div>
+        </div>
     </section>
     <section class="publications">
         <div class="publications-text">
@@ -173,7 +221,7 @@
             <p>We have something to tell</p>
         </div>
         <div class="publications-cards">
-            <div class="publications-card">
+            <div class="publications-card first">
                 <img src="./img/cover1.png" alt="cover">
                 <div class="publications-card-text first">
                     <p class="publications-card-text-title">Equity associate</p>
@@ -181,7 +229,7 @@
                     <p class="publications-card-text-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                 </div>
             </div>
-            <div class="publications-card">
+            <div class="publications-card second">
                 <img src="./img/cover2.png" alt="cover">
                 <div class="publications-card-text">
                     <p class="publications-card-text-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</p>
