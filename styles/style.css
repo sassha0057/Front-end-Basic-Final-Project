@@ -1263,6 +1263,9 @@ footer .footer-mobile-text {
     padding: 36px 106px 36px 107px;
     border-radius: 12px 0 0 0;
   }
+  .trust .trust-container .trust-item.second {
+    padding: 44px 108px 44px 108px;
+  }
   .trust .trust-container .trust-item.third {
     padding: 38px 125px 38px 126px;
   }
@@ -1272,6 +1275,9 @@ footer .footer-mobile-text {
   }
   .trust .trust-container .trust-item.five {
     padding: 38px 128px;
+  }
+  .trust .trust-container .trust-item.six {
+    padding: 36px 141px 36px 140px;
   }
   .trust .trust-container .trust-item.tablet.first {
     padding: 29px 146px 30px;
@@ -1286,6 +1292,7 @@ footer .footer-mobile-text {
   }
   .trust .trust-container .trust-item.tablet.fourth {
     border-radius: 0;
+    padding: 41px 117px;
   }
   .trust .trust-container .trust-item.tablet.five {
     padding: 37px 120px 37px 121px;
