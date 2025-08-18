@@ -183,6 +183,10 @@
   font-weight: 700;
   color: #24A3FF;
   margin: 30px 0 15px 0;
+  transition: 0.85s;
+}
+.services .services-cards .services-card .services-card-title:hover {
+  color: #F0145A;
 }
 .services .services-cards .services-card .services-card-description {
   font-size: 16px;
