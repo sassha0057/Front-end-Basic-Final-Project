@@ -699,7 +699,8 @@ footer{
     }
 
     .provider::before{
-        width: 505px;
+        width: 582px;
+        left: -41%;
     }
 
     .shadow-container{
@@ -712,7 +713,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 430px){
+@media screen and (min-width: 425px){
     
     .header-mobile{
         .navigation{
@@ -725,7 +726,7 @@ footer{
     }
 
     .provider::before{
-        width: 525px;
+        left: -38%;
     }
 }
 

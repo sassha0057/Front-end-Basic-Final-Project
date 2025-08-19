@@ -621,7 +621,8 @@ footer .footer-mobile-text {
     width: 44%;
   }
   .provider::before {
-    width: 505px;
+    width: 582px;
+    left: -41%;
   }
   .shadow-container .shadow {
     width: 385px;
@@ -630,12 +631,12 @@ footer .footer-mobile-text {
     width: 345px;
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 425px) {
   .header-mobile .navigation .mobile-menu .menu-card {
     bottom: 54px;
   }
   .provider::before {
-    width: 525px;
+    left: -38%;
   }
 }
 @media screen and (min-width: 666px) {
