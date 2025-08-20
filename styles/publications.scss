@@ -181,6 +181,10 @@
                     font-size: partial.$font-s;
                     font-weight: partial.$bold;
                     color: partial.$active_regular;
+                    transition: 0.85s;
+                }
+                .publications-card-text-title:hover{
+                    color: partial.$accent;
                 }
                 .publications-card-text-date{
                     font-size: partial.$font-xxs;
@@ -282,6 +286,18 @@ footer{
         display: none;
     }
 
+    .publications{
+        .publications-cards{
+            gap: 30px;
+            justify-content: space-between;
+            .publications-card.six{
+                .publications-card-text{
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
     .footer-tablet{
         display: none;
     }
@@ -333,10 +349,6 @@ footer{
         }
     }
 }
-
-// @media screen and (min-width: 390px){
-
-// }
 
 @media screen and (min-width: 414px){
 
@@ -412,6 +424,7 @@ footer{
                 padding: 30px 0;
                 display: flex;
                 align-items: center;
+                gap: 2px;
                 a{
                     img.logo-img{
                         width: 130px;
@@ -453,6 +466,12 @@ footer{
                     li:hover{
                         border-bottom: 2px solid partial.$active_regular;
                     }
+                    li.active:hover{
+                        border-bottom: 2px solid partial.$accent;
+                        a{
+                            color: partial.$accent;
+                        }
+                    }
                 }
             }
         }
@@ -469,6 +488,46 @@ footer{
 }
 
 @media screen and (min-width: 768px){
+
+    .publications{
+        .publications-cards{
+            flex-direction: row;
+            justify-content: space-between;
+            .publications-card{
+                img{
+                    width: 309px;
+                }
+                .publications-card-text{
+                    max-width: 309px;
+                }
+            }
+            .publications-card.first{
+                .publications-card-text{
+                    padding-bottom: 109px;
+                }
+            }
+            .publications-card.third{
+                .publications-card-text{
+                    padding-bottom: 87px;
+                }
+            }
+            .publications-card.fourth{
+                .publications-card-text{
+                    padding-bottom: 46px;
+                }
+            }
+            .publications-card.five{
+                .publications-card-text{
+                    padding-bottom: 49px;
+                }
+            }
+            .publications-card.six{
+                .publications-card-text{
+                    padding-bottom: 242px;
+                }
+            }
+        }
+    }
 
     footer{
         .footer-mobile{
@@ -539,9 +598,14 @@ footer{
     }
 }
 
-// @media screen and (min-width: 820px){
+@media screen and (min-width: 890px){
     
-// }
+    .publications{
+        .publications-cards{
+            justify-content: center;
+        }
+    }
+}
 
 @media screen and (min-width: 1024px){
 
@@ -554,10 +618,21 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         padding: 50px 60px 0;
-        background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%);
+        background-color: partial.$basic_white;
         .header-desktop-logo{
-            img{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            img.logo-img{
                 width: 130px;
+            }
+            img.logo-img-slash{
+                width: 27px;
+            }
+            span{
+                color: partial.$main_regular;
+                font-weight: partial.$regular;
+                font-size: partial.$font-xxxl;
             }
         }
         .header-desktop-nav{
@@ -579,22 +654,22 @@ footer{
                 li:nth-child(1){
                     padding: 5px 7px;
                     font-size: partial.$font-xxs;
-                    color: partial.$basic_white;
+                    color: partial.$gray_text;
                     font-weight: partial.$bold;
                 }
                 li:nth-child(1):hover{
                     border-radius: 8px;
-                    background-color: rgba(255, 255, 255, 0.20);                
+                    background-color: partial.$gray_bg;                
                 }
                 li:nth-child(2){
                     padding: 5px 7px;
                     font-size: partial.$font-xxs;
-                    color: partial.$basic_white;
+                    color: partial.$gray_text;
                     font-weight: partial.$bold;
                 }
                 li:nth-child(2):hover{
                     border-radius: 8px;
-                    background-color: rgba(255, 255, 255, 0.20);                
+                    background-color: partial.$gray_bg;              
                 }
                 li:nth-child(3){
                     padding: 5px 7px;
@@ -612,7 +687,7 @@ footer{
                 }
                 li:nth-child(7){
                     font-size: partial.$font-s;
-                    color: partial.$basic_white;
+                    color: partial.$gray_text;
                     font-weight: partial.$bold;
                 }
                 li:nth-child(9):hover{
@@ -631,7 +706,7 @@ footer{
                     a{
                         font-size: partial.$font-s;
                         font-weight: partial.$bold;
-                        color: partial.$basic_white;
+                        color: partial.$active_regular;
                     }
                 }
                 li.active{
@@ -641,24 +716,116 @@ footer{
                     }
                 }
                 li:hover{
-                    border-bottom: 2px solid partial.$basic_white;
+                    border-bottom: 2px solid partial.$active_regular;
+                }
+                li.active:hover{
+                    border-bottom: 2px solid partial.$accent;
+                    a{
+                        color: partial.$accent;
+                    }
+                }
+            }
+        }
+    }
+
+    .publications{
+        .publications-cards{
+            gap: 23px;
+            justify-content: space-between;
+            .publications-card{
+                img{
+                    width: 281px;
+                }
+                .publications-card-text{
+                    max-width: 281px;
+                }
+            }
+            .publications-card.first{
+                .publications-card-text{
+                    padding-bottom: 150px;
+                }
+            }
+            .publications-card.third{
+                .publications-card-text{
+                    padding-bottom: 106px;
+                }
+            }
+            .publications-card.fourth{
+                .publications-card-text{
+                    padding-bottom: 68px;
+                }
+            }
+            .publications-card.five{
+                .publications-card-text{
+                    padding-bottom: 90px;
+                }
+            }
+            .publications-card.six{
+                .publications-card-text{
+                    padding-bottom: 266px;
                 }
             }
         }
     }
 }
 
-// @media screen and (min-width: 1180px){
-    
-// }
+@media screen and (min-width: 1366px) {
 
-// @media screen and (min-width: 1366px) {
+    .publications{
+        .publications-cards{
+            gap: 36px;
+            justify-content: center;
+        }
+    }
+}
 
-// }
+@media screen and (min-width: 1440px) {
 
-// @media screen and (min-width: 1440px) {
-
-// }
+    .publications{
+        .publications-cards{
+            gap: 30px;
+            justify-content: space-between;
+            .publications-card{
+                img{
+                    width: 420px;
+                }
+                .publications-card-text{
+                    max-width: 420px;
+                }
+            }
+            .publications-card.first{
+                .publications-card-text{
+                    padding-bottom: 128px;
+                }
+            }
+            .publications-card.second{
+                .publications-card-text{
+                    padding-bottom: 90px;
+                }
+            }
+            .publications-card.third{
+                .publications-card-text{
+                    padding-bottom: 106px;
+                }
+            }
+            .publications-card.fourth{
+                .publications-card-text{
+                    padding-bottom: 87px;
+                }
+            }
+            .publications-card.five{
+                .publications-card-text{
+                    padding-bottom: 109px;
+                }
+            }
+            .publications-card.six{
+                .publications-card-text{
+                    padding-bottom: 353px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1920px) {
 
@@ -668,6 +835,47 @@ footer{
 
     .publications{
         padding: 30px 160px;
+        .publications-cards{
+            gap: 23px;
+            .publications-card{
+                img{
+                    width: 513px;
+                }
+                .publications-card-text{
+                    max-width: 513px;
+                }
+            }
+            .publications-card.first{
+                .publications-card-text{
+                    padding-bottom: 131px;
+                }
+            }
+            .publications-card.second{
+                .publications-card-text{
+                    padding-bottom: 90px;
+                }
+            }
+            .publications-card.third{
+                .publications-card-text{
+                    padding-bottom: 109px;
+                }
+            }
+            .publications-card.fourth{
+                .publications-card-text{
+                    padding-bottom: 109px;
+                }
+            }
+            .publications-card.five{
+                .publications-card-text{
+                    padding-bottom: 90px;
+                }
+            }
+            .publications-card.six{
+                .publications-card-text{
+                    padding-bottom: 434px;
+                }
+            }
+        }
     }
 
     footer{

@@ -183,6 +183,10 @@
   font-size: 16px;
   font-weight: 700;
   color: #24A3FF;
+  transition: 0.85s;
+}
+.publications .publications-cards .publications-card .publications-card-text .publications-card-text-title:hover {
+  color: #F0145A;
 }
 .publications .publications-cards .publications-card .publications-card-text .publications-card-text-date {
   font-size: 12px;
@@ -276,6 +280,13 @@ footer .footer-mobile-text {
   .desktop-nav {
     display: none;
   }
+  .publications .publications-cards {
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .publications .publications-cards .publications-card.six .publications-card-text {
+    border-radius: 8px;
+  }
   .footer-tablet {
     display: none;
   }
@@ -363,6 +374,7 @@ footer .footer-mobile-text {
     padding: 30px 0;
     display: flex;
     align-items: center;
+    gap: 2px;
   }
   .header-mobile .navigation .logo-container a img.logo-img {
     width: 130px;
@@ -404,6 +416,12 @@ footer .footer-mobile-text {
   .header-mobile .navigation .desktop-nav ul li:hover {
     border-bottom: 2px solid #24A3FF;
   }
+  .header-mobile .navigation .desktop-nav ul li.active:hover {
+    border-bottom: 2px solid #F0145A;
+  }
+  .header-mobile .navigation .desktop-nav ul li.active:hover a {
+    color: #F0145A;
+  }
   .publications {
     margin-top: 60px;
     padding: 30px 60px;
@@ -413,6 +431,31 @@ footer .footer-mobile-text {
   }
 }
 @media screen and (min-width: 768px) {
+  .publications .publications-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .publications .publications-cards .publications-card img {
+    width: 309px;
+  }
+  .publications .publications-cards .publications-card .publications-card-text {
+    max-width: 309px;
+  }
+  .publications .publications-cards .publications-card.first .publications-card-text {
+    padding-bottom: 109px;
+  }
+  .publications .publications-cards .publications-card.third .publications-card-text {
+    padding-bottom: 87px;
+  }
+  .publications .publications-cards .publications-card.fourth .publications-card-text {
+    padding-bottom: 46px;
+  }
+  .publications .publications-cards .publications-card.five .publications-card-text {
+    padding-bottom: 49px;
+  }
+  .publications .publications-cards .publications-card.six .publications-card-text {
+    padding-bottom: 242px;
+  }
   footer .footer-mobile {
     display: none;
   }
@@ -475,6 +518,11 @@ footer .footer-mobile-text {
     font-weight: 400;
   }
 }
+@media screen and (min-width: 890px) {
+  .publications .publications-cards {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header-mobile {
     display: none;
@@ -484,10 +532,23 @@ footer .footer-mobile-text {
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 60px 0;
-    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%);
+    background-color: #FFF;
   }
-  .header-desktop .header-desktop-logo img {
+  .header-desktop .header-desktop-logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .header-desktop .header-desktop-logo img.logo-img {
     width: 130px;
+  }
+  .header-desktop .header-desktop-logo img.logo-img-slash {
+    width: 27px;
+  }
+  .header-desktop .header-desktop-logo span {
+    color: #323264;
+    font-weight: 400;
+    font-size: 38px;
   }
   .header-desktop .header-desktop-nav {
     display: flex;
@@ -508,22 +569,22 @@ footer .footer-mobile-text {
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(1) {
     padding: 5px 7px;
     font-size: 12px;
-    color: #FFF;
+    color: #B3B3BA;
     font-weight: 700;
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(1):hover {
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #F5F5FA;
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(2) {
     padding: 5px 7px;
     font-size: 12px;
-    color: #FFF;
+    color: #B3B3BA;
     font-weight: 700;
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(2):hover {
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #F5F5FA;
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(3) {
     padding: 5px 7px;
@@ -540,7 +601,7 @@ footer .footer-mobile-text {
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(7) {
     font-size: 16px;
-    color: #FFF;
+    color: #B3B3BA;
     font-weight: 700;
   }
   .header-desktop .header-desktop-nav .header-desktop-info li:nth-child(9):hover {
@@ -559,7 +620,7 @@ footer .footer-mobile-text {
   .header-desktop .header-desktop-nav .header-desktop-nav-list li a {
     font-size: 16px;
     font-weight: 700;
-    color: #FFF;
+    color: #24A3FF;
   }
   .header-desktop .header-desktop-nav .header-desktop-nav-list li.active {
     border-bottom: 2px solid #F0145A;
@@ -568,7 +629,74 @@ footer .footer-mobile-text {
     color: #F0145A;
   }
   .header-desktop .header-desktop-nav .header-desktop-nav-list li:hover {
-    border-bottom: 2px solid #FFF;
+    border-bottom: 2px solid #24A3FF;
+  }
+  .header-desktop .header-desktop-nav .header-desktop-nav-list li.active:hover {
+    border-bottom: 2px solid #F0145A;
+  }
+  .header-desktop .header-desktop-nav .header-desktop-nav-list li.active:hover a {
+    color: #F0145A;
+  }
+  .publications .publications-cards {
+    gap: 23px;
+    justify-content: space-between;
+  }
+  .publications .publications-cards .publications-card img {
+    width: 281px;
+  }
+  .publications .publications-cards .publications-card .publications-card-text {
+    max-width: 281px;
+  }
+  .publications .publications-cards .publications-card.first .publications-card-text {
+    padding-bottom: 150px;
+  }
+  .publications .publications-cards .publications-card.third .publications-card-text {
+    padding-bottom: 106px;
+  }
+  .publications .publications-cards .publications-card.fourth .publications-card-text {
+    padding-bottom: 68px;
+  }
+  .publications .publications-cards .publications-card.five .publications-card-text {
+    padding-bottom: 90px;
+  }
+  .publications .publications-cards .publications-card.six .publications-card-text {
+    padding-bottom: 266px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .publications .publications-cards {
+    gap: 36px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .publications .publications-cards {
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .publications .publications-cards .publications-card img {
+    width: 420px;
+  }
+  .publications .publications-cards .publications-card .publications-card-text {
+    max-width: 420px;
+  }
+  .publications .publications-cards .publications-card.first .publications-card-text {
+    padding-bottom: 128px;
+  }
+  .publications .publications-cards .publications-card.second .publications-card-text {
+    padding-bottom: 90px;
+  }
+  .publications .publications-cards .publications-card.third .publications-card-text {
+    padding-bottom: 106px;
+  }
+  .publications .publications-cards .publications-card.fourth .publications-card-text {
+    padding-bottom: 87px;
+  }
+  .publications .publications-cards .publications-card.five .publications-card-text {
+    padding-bottom: 109px;
+  }
+  .publications .publications-cards .publications-card.six .publications-card-text {
+    padding-bottom: 353px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -577,6 +705,33 @@ footer .footer-mobile-text {
   }
   .publications {
     padding: 30px 160px;
+  }
+  .publications .publications-cards {
+    gap: 23px;
+  }
+  .publications .publications-cards .publications-card img {
+    width: 513px;
+  }
+  .publications .publications-cards .publications-card .publications-card-text {
+    max-width: 513px;
+  }
+  .publications .publications-cards .publications-card.first .publications-card-text {
+    padding-bottom: 131px;
+  }
+  .publications .publications-cards .publications-card.second .publications-card-text {
+    padding-bottom: 90px;
+  }
+  .publications .publications-cards .publications-card.third .publications-card-text {
+    padding-bottom: 109px;
+  }
+  .publications .publications-cards .publications-card.fourth .publications-card-text {
+    padding-bottom: 109px;
+  }
+  .publications .publications-cards .publications-card.five .publications-card-text {
+    padding-bottom: 90px;
+  }
+  .publications .publications-cards .publications-card.six .publications-card-text {
+    padding-bottom: 434px;
   }
   footer {
     padding: 0 160px 30px;
