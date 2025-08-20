@@ -129,92 +129,68 @@
     }
 }
 
-.publications{
-    padding: 30px;
-    background-color: partial.$gray_bg;
+.team{
     display: flex;
     flex-direction: column;
-    .swap{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 30px;
-        .swap-box{
-            display: flex;
-            justify-content: center;
-            padding: 2px;
-            gap: 2px;
-            border-radius: 12px;
-            background-color: partial.$gray-separator;
-            .swap-button{
-                padding: 8px 30px 10px;
-                color: partial.$main_regular;
-                font-size: partial.$font-s;
-                font-weight: partial.$bold;
-                transition: 0.85s;
-            }
-            .swap-button.active{
-                border-radius: 10px;
-                background-color: partial.$basic_white;
-            }
-            .swap-button:hover{
-                border-radius: 10px;
-                background-color: partial.$gray_bg;
-            }
+    background-color: partial.$basic_white;
+    padding: 30px 0 60px 0;
+    .team-title{
+        padding: 0 30px;
+        span{
+            font-size: partial.$font-xxl;
+            font-weight: partial.$bold;
+            background: partial.$gradient-text-red;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
-    .publications-cards{
+    .team-cards{
+        padding: 30px 30px 0;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
-        .publications-card{
+        .team-card{
             display: flex;
             flex-direction: column;
-            .publications-card-text{
+            img{
+                border-radius: 12px;
+            }
+            .team-content{
                 display: flex;
-                flex-direction: column;
-                gap: 15px;
-                padding: 30px;
-                border-radius: 0px 0px 8px 8px;
-                background-color: partial.$basic_white;
-                .publications-card-text-title{
-                    font-size: partial.$font-s;
-                    font-weight: partial.$bold;
-                    color: partial.$active_regular;
-                    transition: 0.85s;
+                justify-content: space-between;
+                .team-card-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 15px;
+                    .team-name{
+                        font-size: partial.$font-s;
+                        font-weight: partial.$bold;
+                        color: partial.$main_regular;
+                    }
+                    .team-name:hover{
+                        color: partial.$accent;
+                    }
+                    .team-role{
+                        font-size: partial.$font-xs;
+                        font-weight: partial.$regular;
+                        color: partial.$gray_text;
+                        line-height: 22px;
+                    }
                 }
-                .publications-card-text-title:hover{
-                    color: partial.$accent;
-                }
-                .publications-card-text-date{
-                    font-size: partial.$font-xxs;
-                    font-weight: partial.$bold;
-                    color: partial.$gray_text;
-                    text-transform: uppercase;
-                    padding-bottom: 15px;
-                    border-bottom: 4px solid partial.$gray-separator;
-                }
-                .publications-card-text-description{
-                    font-size: partial.$font-xs;
-                    font-weight: partial.$regular;
-                    color: partial.$basic_black;
-                    line-height: 22px;
+                .more-button{
+                    width: 32px;
                 }
             }
         }
-    }
-    .more-button{
-        display: flex;
-        justify-content: center;
-        padding-top: 30px;
-        button{
-            padding: 18px 30px;
-            border-radius: 12px;
-            background-color: partial.$active_regular;
-            box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
-            color: partial.$basic_white;
-            font-size: partial.$font-s;
-            font-weight: partial.$bold;
+        .team-card.first{
+            .team-content{
+                .more-button{
+                    transform: rotate(-90deg);
+                }
+            }
         }
     }
 }
@@ -230,7 +206,6 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        border-top: 2px solid partial.$gray-separator;
         li > img{
             padding-top: 11px;
         }
@@ -286,18 +261,6 @@ footer{
         display: none;
     }
 
-    .publications{
-        .publications-cards{
-            gap: 30px;
-            justify-content: space-between;
-            .publications-card.six{
-                .publications-card-text{
-                    border-radius: 8px;
-                }
-            }
-        }
-    }
-
     .footer-tablet{
         display: none;
     }
@@ -307,16 +270,6 @@ footer{
     
     .menu-close{
         margin-left: 240px;
-    }
-    
-    .publications{
-        .publications-cards{
-            .publications-card{
-                img{
-                    width: 260px;
-                }
-            }
-        }
     }
 
     footer{
@@ -331,16 +284,6 @@ footer{
     
     .menu-close{
         margin-left: 300px;
-    }
-
-    .publications{
-        .publications-cards{
-            .publications-card{
-                img{
-                    width: auto;
-                }
-            }
-        }
     }
 
     footer{
@@ -477,9 +420,16 @@ footer{
         }
     }
 
-    .publications{
-        margin-top: 60px;
-        padding: 30px 60px;
+    .team{
+        .team-cards{
+            .team-card.first{
+                .team-content{
+                    .more-button{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
     }
 
     footer{
@@ -489,41 +439,23 @@ footer{
 
 @media screen and (min-width: 768px){
 
-    .publications{
-        .publications-cards{
+    .team{
+        padding: 60px 0;
+        .team-title{
+            padding: 0 60px;
+            span{
+                font-size: partial.$font-xxxl;
+            }
+        }
+        .team-cards{
+            padding: 60px 60px 0;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-between;
-            .publications-card{
+            row-gap: 60px;
+            .team-card{
                 img{
-                    width: 309px;
-                }
-                .publications-card-text{
-                    max-width: 309px;
-                }
-            }
-            .publications-card.first{
-                .publications-card-text{
-                    padding-bottom: 109px;
-                }
-            }
-            .publications-card.third{
-                .publications-card-text{
-                    padding-bottom: 87px;
-                }
-            }
-            .publications-card.fourth{
-                .publications-card-text{
-                    padding-bottom: 46px;
-                }
-            }
-            .publications-card.five{
-                .publications-card-text{
-                    padding-bottom: 49px;
-                }
-            }
-            .publications-card.six{
-                .publications-card-text{
-                    padding-bottom: 242px;
+                    width: 294px;
                 }
             }
         }
@@ -540,7 +472,6 @@ footer{
             display: flex;
             justify-content: space-between;
             padding-top: 30px;
-            border-top: 2px solid partial.$gray-separator;
             .footer-tablet-adress{
                 display: flex;
                 align-items: center;
@@ -598,11 +529,10 @@ footer{
     }
 }
 
-@media screen and (min-width: 890px){
-    
-    .publications{
-        .publications-cards{
-            justify-content: center;
+@media screen and (min-width: 820px){
+    .team{
+        .team-cards{
+            justify-content: space-evenly;
         }
     }
 }
@@ -728,41 +658,15 @@ footer{
         }
     }
 
-    .publications{
-        .publications-cards{
-            gap: 23px;
+    .team{
+        .team-title{
+            padding: 0 180px;
+        }
+        .team-cards{
             justify-content: space-between;
-            .publications-card{
+            .team-card{
                 img{
-                    width: 281px;
-                }
-                .publications-card-text{
-                    max-width: 281px;
-                }
-            }
-            .publications-card.first{
-                .publications-card-text{
-                    padding-bottom: 150px;
-                }
-            }
-            .publications-card.third{
-                .publications-card-text{
-                    padding-bottom: 106px;
-                }
-            }
-            .publications-card.fourth{
-                .publications-card-text{
-                    padding-bottom: 68px;
-                }
-            }
-            .publications-card.five{
-                .publications-card-text{
-                    padding-bottom: 90px;
-                }
-            }
-            .publications-card.six{
-                .publications-card-text{
-                    padding-bottom: 266px;
+                    width: 261px;
                 }
             }
         }
@@ -770,59 +674,24 @@ footer{
 }
 
 @media screen and (min-width: 1366px) {
-
-    .publications{
-        .publications-cards{
-            gap: 36px;
-            justify-content: center;
+    
+    .team{
+        .team-cards{
+            justify-content: space-evenly;
+            .team-card{
+                img{
+                    width: 400px;
+                }
+            }
         }
     }
 }
 
 @media screen and (min-width: 1440px) {
-
-    .publications{
-        .publications-cards{
-            gap: 30px;
+    
+    .team{
+        .team-cards{
             justify-content: space-between;
-            .publications-card{
-                img{
-                    width: 420px;
-                }
-                .publications-card-text{
-                    max-width: 420px;
-                }
-            }
-            .publications-card.first{
-                .publications-card-text{
-                    padding-bottom: 128px;
-                }
-            }
-            .publications-card.second{
-                .publications-card-text{
-                    padding-bottom: 90px;
-                }
-            }
-            .publications-card.third{
-                .publications-card-text{
-                    padding-bottom: 106px;
-                }
-            }
-            .publications-card.fourth{
-                .publications-card-text{
-                    padding-bottom: 87px;
-                }
-            }
-            .publications-card.five{
-                .publications-card-text{
-                    padding-bottom: 109px;
-                }
-            }
-            .publications-card.six{
-                .publications-card-text{
-                    padding-bottom: 353px;
-                }
-            }
         }
     }
 }
@@ -833,46 +702,15 @@ footer{
         padding: 50px 160px 0;
     }
 
-    .publications{
-        padding: 30px 160px;
-        .publications-cards{
-            gap: 23px;
-            .publications-card{
+    .team{
+        .team-title{
+            padding: 0 280px;
+        }
+        .team-cards{
+            padding: 60px 160px 0;
+            .team-card{
                 img{
-                    width: 513px;
-                }
-                .publications-card-text{
-                    max-width: 513px;
-                }
-            }
-            .publications-card.first{
-                .publications-card-text{
-                    padding-bottom: 131px;
-                }
-            }
-            .publications-card.second{
-                .publications-card-text{
-                    padding-bottom: 90px;
-                }
-            }
-            .publications-card.third{
-                .publications-card-text{
-                    padding-bottom: 109px;
-                }
-            }
-            .publications-card.fourth{
-                .publications-card-text{
-                    padding-bottom: 109px;
-                }
-            }
-            .publications-card.five{
-                .publications-card-text{
-                    padding-bottom: 90px;
-                }
-            }
-            .publications-card.six{
-                .publications-card-text{
-                    padding-bottom: 434px;
+                    width: 493px;
                 }
             }
         }
@@ -882,5 +720,3 @@ footer{
         padding: 0 160px 30px;
     }
 }
-
-
