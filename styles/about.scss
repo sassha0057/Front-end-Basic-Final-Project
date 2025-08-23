@@ -142,6 +142,7 @@
             display: flex;
             flex-direction: column;
             gap: 28px;
+            width: 100%;
             .about-us-title{
                 font-size: partial.$font-xxl;
                 font-weight: partial.$bold;
@@ -212,11 +213,16 @@
         flex-direction: column;
         padding: 30px 30px 60px;
         gap: 30px;
-        .team-logo-description{
-            font-size: partial.$font-l;
-            font-weight: partial.$regular;
-            color: partial.$basic_black;
-            line-height: 30px;
+        .team-logo-descr{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .team-logo-description{
+                font-size: partial.$font-l;
+                font-weight: partial.$regular;
+                color: partial.$basic_black;
+                line-height: 30px;
+            }
         }
         .team-logo-title{
             font-size: partial.$font-xxl;
@@ -257,6 +263,9 @@
             display: flex;
             flex-direction: row;
             gap: 14px;
+            .next:hover{
+                filter: invert(0%) sepia(92%) saturate(14%) hue-rotate(105deg) brightness(95%) contrast(100%);
+            }
         }
     }
 }
@@ -565,9 +574,21 @@ footer{
 @media screen and (min-width: 768px){
 
     .about-us{
+        .about-us-info{
+            .about-us-text{
+                .about-us-title{
+                    font-size: partial.$font-xxxl;
+                }
+            }
+        }
         .achievements{
             .achievements-cards{
                 gap: 40px;
+            }
+        }
+        .team-logo-text{
+            .team-logo-title{
+                font-size: partial.$font-xxxl;
             }
         }
     }
@@ -640,10 +661,6 @@ footer{
         }
     }
 }
-
-// @media screen and (min-width: 820px){
-
-// }
 
 @media screen and (min-width: 1024px){
 
@@ -765,20 +782,140 @@ footer{
             }
         }
     }
+    
+    .about-us{
+        .about-us-info{
+            flex-direction: row;
+        }
+        .team-logo{
+            p{
+                font-size: 86px;
+            }
+        }
+        .team-logo-text{
+            flex-direction: row;
+            gap: 60px;
+            .team-logo-title{
+                width: 275%;
+            }
+        }
+        .achievements{
+            .achievements-cards{
+                .achievements-card{
+                    max-width: 196px;
+                }
+                .achievements-card.first{
+                    padding: 25px 58px;
+                    img{
+                        width: 80px;
+                    }
+                }
+                .achievements-card.second{
+                    padding: 25px 18px 25px 19px;
+                    img{
+                        width: 159px;
+                    }
+                }
+                .achievements-card.third{
+                    padding: 25px 1px;
+                    img{
+                        width: 195px;
+                    }
+                }
+                .achievements-card.fourth{
+                    padding: 25px 15px;
+                    img{
+                        width: 166px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-// @media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
     
-// }
-
-// @media screen and (min-width: 1440px) {
-    
-// }
+    .about-us{
+        .about-us-info{
+            padding: 60px 180px;
+        }
+        .team-logo{
+            p{
+                font-size: 96px;
+                left: 35%;
+            }
+        }
+        .team-logo-text{
+            padding: 60px 180px;
+            .team-logo-title{
+                width: 172%;
+            }
+        }
+        .achievements{
+            .achievements-cards{
+                .achievements-card{
+                    max-width: 300px;
+                }
+                .achievements-card.first{
+                    padding: 25px 110px;
+                }
+                .achievements-card.second{
+                    padding: 25px 70px 25px 71px;
+                }
+                .achievements-card.third{
+                    padding: 25px 52px 25px 53px;
+                }
+                .achievements-card.fourth{
+                    padding: 25px 67px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1920px) {
 
     .header-desktop{
         padding: 50px 160px 0;
+    }
+
+    .about-us{
+        .about-us-info{
+            padding: 60px 280px;
+        }
+        .team-logo{
+            p{
+                top: 40%;
+                left: 40%;
+            }
+        }
+        .team-logo-text{
+            padding: 60px 280px;
+            .team-logo-title{
+                width: 97%;
+            }
+        }
+        .achievements{
+            padding: 30px 160px;
+            .achievements-cards{
+                gap: 35px;
+                .achievements-card{
+                    max-width: 370px;
+                }
+                .achievements-card.first{
+                    padding: 25px 145px;
+                }
+                .achievements-card.second{
+                    padding: 25px 105px 25px 106px;
+                }
+                .achievements-card.third{
+                    padding: 25px 87px 25px 88px;
+                }
+                .achievements-card.fourth{
+                    padding: 25px 102px;
+                }
+            }
+        }
     }
 
     footer{

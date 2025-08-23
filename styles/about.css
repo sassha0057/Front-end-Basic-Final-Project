@@ -142,6 +142,7 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  width: 100%;
 }
 .about-us .about-us-info .about-us-text .about-us-title {
   font-size: 30px;
@@ -212,7 +213,12 @@
   padding: 30px 30px 60px;
   gap: 30px;
 }
-.about-us .team-logo-text .team-logo-description {
+.about-us .team-logo-text .team-logo-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-us .team-logo-text .team-logo-descr .team-logo-description {
   font-size: 20px;
   font-weight: 400;
   color: #000;
@@ -257,6 +263,9 @@
   display: flex;
   flex-direction: row;
   gap: 14px;
+}
+.about-us .achievements .ellipse .next:hover {
+  filter: invert(0%) sepia(92%) saturate(14%) hue-rotate(105deg) brightness(95%) contrast(100%);
 }
 
 footer {
@@ -508,8 +517,14 @@ footer .footer-mobile-text {
   }
 }
 @media screen and (min-width: 768px) {
+  .about-us .about-us-info .about-us-text .about-us-title {
+    font-size: 38px;
+  }
   .about-us .achievements .achievements-cards {
     gap: 40px;
+  }
+  .about-us .team-logo-text .team-logo-title {
+    font-size: 38px;
   }
   footer .footer-mobile {
     display: none;
@@ -687,10 +702,114 @@ footer .footer-mobile-text {
   .header-desktop .header-desktop-nav .header-desktop-nav-list li.active:hover a {
     color: #F0145A;
   }
+  .about-us .about-us-info {
+    flex-direction: row;
+  }
+  .about-us .team-logo p {
+    font-size: 86px;
+  }
+  .about-us .team-logo-text {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .about-us .team-logo-text .team-logo-title {
+    width: 275%;
+  }
+  .about-us .achievements .achievements-cards .achievements-card {
+    max-width: 196px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.first {
+    padding: 25px 58px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.first img {
+    width: 80px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.second {
+    padding: 25px 18px 25px 19px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.second img {
+    width: 159px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.third {
+    padding: 25px 1px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.third img {
+    width: 195px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.fourth {
+    padding: 25px 15px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.fourth img {
+    width: 166px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us .about-us-info {
+    padding: 60px 180px;
+  }
+  .about-us .team-logo p {
+    font-size: 96px;
+    left: 35%;
+  }
+  .about-us .team-logo-text {
+    padding: 60px 180px;
+  }
+  .about-us .team-logo-text .team-logo-title {
+    width: 172%;
+  }
+  .about-us .achievements .achievements-cards .achievements-card {
+    max-width: 300px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.first {
+    padding: 25px 110px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.second {
+    padding: 25px 70px 25px 71px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.third {
+    padding: 25px 52px 25px 53px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.fourth {
+    padding: 25px 67px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .header-desktop {
     padding: 50px 160px 0;
+  }
+  .about-us .about-us-info {
+    padding: 60px 280px;
+  }
+  .about-us .team-logo p {
+    top: 40%;
+    left: 40%;
+  }
+  .about-us .team-logo-text {
+    padding: 60px 280px;
+  }
+  .about-us .team-logo-text .team-logo-title {
+    width: 97%;
+  }
+  .about-us .achievements {
+    padding: 30px 160px;
+  }
+  .about-us .achievements .achievements-cards {
+    gap: 35px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card {
+    max-width: 370px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.first {
+    padding: 25px 145px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.second {
+    padding: 25px 105px 25px 106px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.third {
+    padding: 25px 87px 25px 88px;
+  }
+  .about-us .achievements .achievements-cards .achievements-card.fourth {
+    padding: 25px 102px;
   }
   footer {
     padding: 0 160px 30px;
