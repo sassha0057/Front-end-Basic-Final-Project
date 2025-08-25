@@ -1,0 +1,136 @@
+* {
+  font-family: Montserrat;
+}
+
+body {
+  background-color: #323264;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  margin: 129px 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 12px;
+  gap: 30px;
+  background-color: #F5F5FA;
+}
+.contact form .contact-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.contact form .contact-container .form-title {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact form .contact-container .exit-icon {
+  width: 32px;
+  height: 32px;
+  transition: 0.85s;
+}
+.contact form .contact-container .exit-icon:hover {
+  background-color: #E6E6F0;
+  border-radius: 8px;
+}
+.contact form .form-name-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact form input, .contact form textarea {
+  background-color: #FFF;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid transparent;
+}
+.contact form input:focus, .contact form textarea:focus {
+  border: 1px solid #24A3FF;
+  outline: none;
+}
+.contact form .form-email-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact form .form-email-phone p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #B3B3BA;
+  text-transform: uppercase;
+}
+.contact form button {
+  padding: 18px 30px;
+  border-radius: 12px;
+  background-color: #24A3FF;
+  box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.85s;
+}
+.contact form button:hover {
+  background-color: #0085FF;
+}
+.contact form button:active {
+  background-color: #006CCF;
+}
+
+@media screen and (min-width: 100px) {
+  .contact form .contact-container .form-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .contact form .contact-container .form-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 666px) {
+  .contact {
+    padding: 60px;
+    margin: 0;
+  }
+  .contact form .contact-container .form-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact form .contact-container .form-title {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+    margin: 55px 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contact {
+    margin: 80px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    padding: 60px 180px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .contact {
+    padding: 60px 280px;
+    margin: 140px 0;
+  }
+}/*# sourceMappingURL=contact-form-popup.css.map */

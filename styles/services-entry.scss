@@ -379,6 +379,13 @@ footer{
 
     .services{
         padding-top: 30px;
+        .services-cards{
+            .services-card{
+                .services-card-title{
+                    font-size: partial.$font-xl;
+                }
+            }
+        }
     }
 
     .footer-tablet{

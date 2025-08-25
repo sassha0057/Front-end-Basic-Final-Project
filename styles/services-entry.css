@@ -372,6 +372,9 @@ footer .footer-mobile-text {
   .services {
     padding-top: 30px;
   }
+  .services .services-cards .services-card .services-card-title {
+    font-size: 22px;
+  }
   .footer-tablet {
     display: none;
   }

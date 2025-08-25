@@ -1,0 +1,175 @@
+@use 'partial';
+
+*{
+    font-family: Montserrat;
+}
+
+body{
+    background-color: partial.$main_regular;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    margin: 129px 0;
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 12px;
+        gap: 30px;
+        background-color: partial.$gray_bg;
+        .contact-container{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            .form-title{
+                font-size: partial.$font-xxl;
+                font-weight: partial.$bold;
+                background: partial.$gradient-text-red;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .exit-icon{
+                width: 32px;
+                height: 32px;
+                transition: 0.85s;
+            }
+            .exit-icon:hover{
+                background-color: partial.$gray-separator;
+                border-radius: 8px;
+            }
+        }
+        .form-name-msg{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea{
+            background-color: partial.$basic_white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: partial.$font-s;
+            border: 1px solid transparent;
+        }
+        input:focus, textarea:focus{
+            border: 1px solid partial.$active_regular;
+            outline: none;
+        }
+        .form-email-phone{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            p{
+                font-size: partial.$font-xs;
+                font-weight: partial.$bold;
+                color: partial.$gray_text;
+                text-transform: uppercase;
+            }
+        }
+        button{
+            padding: 18px 30px;
+            border-radius: 12px;
+            background-color: partial.$active_regular;
+            box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
+            color: partial.$basic_white;
+            font-size: partial.$font-s;
+            font-weight: partial.$bold;
+            transition: 0.85s;
+        }
+        button:hover{
+            background-color: partial.$active_hover;
+        }
+        button:active{
+            background-color: #006CCF;
+        }
+    }
+}
+
+@media screen and (min-width: 100px){
+
+    .contact{
+        form{
+            .contact-container{
+                .form-title{
+                    font-size: partial.$font-l;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px){
+    
+    .contact{
+        form{
+            .contact-container{
+                .form-title{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 666px){
+
+    .contact{
+        padding: 60px;
+        margin: 0;
+        form{
+            .contact-container{
+                .form-title{
+                    font-size: partial.$font-xxl;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .contact{
+        form{
+            .contact-container{
+                .form-title{
+                    font-size: partial.$font-xxxl;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .contact{
+        flex-direction: row;
+        justify-content: center;
+        margin: 55px 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    
+    .contact{
+        margin: 80px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .contact{
+        padding: 60px 180px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
+    .contact{
+        padding: 60px 280px;
+        margin: 140px 0;
+    }
+}
