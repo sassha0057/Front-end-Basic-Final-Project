@@ -3,9 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/publications-entry.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script src="./JavaScript/burger-menu.js" defer></script>
+    <title>Publications entry</title>
 </head>
 <body>
-    
+    <header class="header-mobile">
+        <div class="header-info">
+            <ul class="lang">
+                <li>УК</li>
+                <li>РУ</li>
+                <li>EN</li>
+            </ul>
+            <p>0800 211 927</p>
+            <ul class="info">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li>Kyiv, Mechnikova str., 14/1</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li>0800 211 927</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li><img src="./img/facebook-header-light.svg" alt="facebook"></li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img class="logo-img" src="./img/logo-dark.svg" alt="logo">
+                    <img class="logo-img-slash" src="./img/slash.svg" alt="slash">
+                </a>
+                <span>publications</span>
+            </div>
+            <div class="burger-menu">
+                <img id="burger" class="burger-img" src="./img/hamburger-dark.svg" alt="menu">
+                <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-modal="true">
+                    <div class="menu-card">
+                      <img id="menuClose" class="menu-close" src="./img/exit.svg" alt="close">
+                      <ul class="menu-links">
+                        <li><a href="./about.html">about us</a></li>
+                        <li><a href="./services.html">services</a></li>
+                        <li><a href="./team.html">team</a></li>
+                        <li class="active"><a href="./publications.html">publications</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="desktop-nav">
+                <nav>
+                    <ul>
+                        <li><a href="./about.html">about us</a></li>
+                        <li><a href="./services.html">services</a></li>
+                        <li><a href="./team.html">team</a></li>
+                        <li class="active"><a href="./publications.html">publications</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <header class="header-desktop">
+        <div class="header-desktop-logo">
+            <a href="./index.html">
+                <img class="logo-img" src="./img/logo-dark.svg" alt="logo">
+                <img class="logo-img-slash" src="./img/slash.svg" alt="slash">
+            </a>
+            <span>publications</span>
+        </div>
+        <div class="header-desktop-nav">
+            <ul class="header-desktop-info">
+                <li>УК</li>
+                <li>РУ</li>
+                <li>EN</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li>Kyiv, Mechnikova str, 14/1</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li>0800 211 927</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+                        <circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/>
+                    </svg>
+                </li>
+                <li><img src="./img/facebook-header-light.svg" alt="facebook"></li>
+            </ul>
+            <ul class="header-desktop-nav-list">
+                <li><a href="./about.html">about us</a></li>
+                <li><a href="./services.html">services</a></li>
+                <li><a href="./team.html">team</a></li>
+                <li class="active"><a href="./publications.html">publications</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main-info">
+        <div class="main-card">
+            <img src="./img/cover2.png" alt="cover">
+            <div class="main-card-text">
+                <p class="main-card-text-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</p>
+                <p class="main-card-text-date">September 29</p>
+                <p class="main-card-text-description">On January 21, the French National Data Protection Commission (CNIL) announced on its website that it had fined Google for violating the EU's General Data Protection Regulation (GDPR). It took six months for the EU countries to make a quality level-up in the amount of fines for non-compliance with this standard. Prior to that, the fine was mainly € 20,000-30,000, with the largest fine amounting to € 400,000 and related to a hospital in Portugal. But this precedent is interesting not so much the amount of the fine as the rigidity of the regulator's approaches. Denis Beregovyi, Axon Partners, explains why, especially for Mind.</p>
+                <p class="main-card-text-description">For what? The group complaints against Google arrived at CNIL on the same day that the GDPR came into force. The complainants reported that Google processed users' personal data without due cause, in particular to create personalized advertising offers.</p>
+            </div>
+        </div>
+        <p class="main-title">To the attention of Ukrainian security officers: the inspection was conducted online, without searches, without seizure of servers or other visible interference for business. And so it was possible.</p>
+        <div class="acording">
+            <p class="acording-title">According to the results of CNIL inspections revealed violations of two requirements of the GDPR:</p>
+            <ul class="acording-list">
+                <li>Transparency and awareness of users about the processing of personal data.</li>
+                <li>Lack of proper user consent for the processing of personal data for the purpose of personalizing advertising.</li>
+            </ul>
+            <p class="acording-descr">In the case of personalization of advertising, Google was sure to obtain the consent of users, because, firstly, when creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has a section "Ads personalization", where you can disable this feature.</p>
+        </div>
+        <div class="personalisation">
+            <img src="./img/Illustration.png" alt="Illustration">
+            <p>This is what the ad personalization settings window in your Google Account looks like</p>
+        </div>
+        <p class="main-descr">However, CNIL does not think so, because the information about the personalization of advertising is not clear enough to users. As an example, the Commission claims that the relevant "Personalization" window does not contain information on the full range of Google services that collect and process personal data for this purpose (YouTube, Google search, Play Store, Google pictures, Gmail, etc.), and therefore, the user cannot realize to what extent the data is used and how exactly they can be combined.</p>
+        <div class="decision">
+            <p class="decision-title">So, let's walk through the text of the CNIL decision</p>
+            <p class="decision-description">Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the case was not initiated by the Irish, but by the French regulator. This is why it happened.</p>
+            <p class="decision-description">If data processing decisions are taken anywhere outside the EU, there is a one-stop mechanism - where the complaint is received, the body considers it. Because Google's data processing center is located in the United States and the complaint was first received in France, CNIL considered it.</p>
+        </div>
+        <ul class="social-media-list">
+            <li><img src="./img/entry-facebook.svg" alt="facebook"></li>
+            <li><img src="./img/entry-telegram.svg" alt="telegram"></li>
+            <li><img src="./img/entry-linkedIn.svg" alt="linkedIn"></li>
+        </ul>
+    </section>
+    <section class="publications">
+        <div class="publications-text">
+            <a class="publications-href" href="#">
+                Publications
+                <img src="./img/arrow-right.svg" alt="arrow-right">
+            </a>
+            <p>Recomended</p>
+        </div>
+        <div class="publications-cards">
+            <div class="publications-card first">
+                <img src="./img/cover1.png" alt="cover">
+                <div class="publications-card-text first">
+                    <p class="publications-card-text-title">Equity associate</p>
+                    <p class="publications-card-text-date">April 22</p>
+                    <p class="publications-card-text-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                </div>
+            </div>
+            <div class="publications-card second">
+                <img src="./img/cover2.png" alt="cover">
+                <div class="publications-card-text">
+                    <p class="publications-card-text-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</p>
+                    <p class="publications-card-text-date">September 29</p>
+                    <p class="publications-card-text-description">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </div>
+            </div>
+            <div class="publications-card third">
+                <img src="./img/cover3.png" alt="cover">
+                <div class="publications-card-text third">
+                    <p class="publications-card-text-title">Millennial Testament</p>
+                    <p class="publications-card-text-date">August 19</p>
+                    <p class="publications-card-text-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer-mobile">
+            <li>Kyiv, Mechnikova str., 14/1</li>
+            <li>On map</li>
+            <li><img src="./img/facebook-footer.svg" alt="facebook"></li>
+            <li>0800 211 927</li>
+            <li>contact@forstudy.space</li>
+        </ul>
+        <p class="footer-mobile-text">© 2021 HLEGAL Law company, LLC</p>
+        <div class="footer-tablet">
+            <div>
+                <ul class="footer-tablet-adress">
+                    <li>Kyiv, Mechnikova str, 14/1</li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <circle cx="3" cy="3" r="3" fill="#B3B3BA"/>
+                        </svg>
+                    </li>
+                    <li>On map</li>
+                </ul>
+                <ul class="footer-tablet-contact">
+                    <li><img src="./img/facebook-footer.svg" alt="facebook"></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <circle cx="3" cy="3" r="3" fill="#B3B3BA"/>
+                        </svg>
+                    </li>
+                    <li>0800 211 927</li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <circle cx="3" cy="3" r="3" fill="#B3B3BA"/>
+                        </svg>
+                    </li>
+                    <li>contact@forstudy.space</li>
+                </ul>
+            </div>
+            <p class="footer-tablet-text">© 2021 HLEGAL Law company, LLC</p>
+        </div>
+    </footer>
 </body>
 </html>
