@@ -290,6 +290,10 @@
                     font-size: partial.$font-s;
                     font-weight: partial.$bold;
                     color: partial.$active_regular;
+                    transition: 0.85s;
+                }
+                .publications-card-text-title:hover{
+                    color: partial.$accent;
                 }
                 .publications-card-text-date{
                     font-size: partial.$font-xxs;

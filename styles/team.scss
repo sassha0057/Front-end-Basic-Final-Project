@@ -169,6 +169,7 @@
                         font-size: partial.$font-s;
                         font-weight: partial.$bold;
                         color: partial.$main_regular;
+                        transition: 0.85s;
                     }
                     .team-name:hover{
                         color: partial.$accent;

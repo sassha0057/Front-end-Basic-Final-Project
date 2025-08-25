@@ -172,6 +172,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #323264;
+  transition: 0.85s;
 }
 .team .team-cards .team-card .team-content .team-card-text .team-name:hover {
   color: #F0145A;

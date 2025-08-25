@@ -163,6 +163,10 @@
   font-size: 16px;
   color: #24A3FF;
   font-weight: 400;
+  transition: 0.85s;
+}
+.about-team .about-team-card .about-team-card-text .about-team-card-contact:hover {
+  color: #F0145A;
 }
 .about-team .about-team-card .about-team-card-text .about-team-card-contact.second {
   border-bottom: 4px solid #E6E6F0;
@@ -437,6 +441,10 @@ footer .footer-mobile-text {
     font-size: 16px;
     color: #24A3FF;
     font-weight: 400;
+    transition: 0.85s;
+  }
+  .about-team .tablet .team-card .about-team-card-text .about-team-card-contact:hover {
+    color: #F0145A;
   }
   .about-team .tablet .team-description {
     display: flex;
@@ -686,6 +694,10 @@ footer .footer-mobile-text {
     font-size: 16px;
     color: #24A3FF;
     font-weight: 400;
+    transition: 0.85s;
+  }
+  .about-team .desktop .about-team-card-text .about-team-card-contact:hover {
+    color: #F0145A;
   }
   .about-team .desktop .about-team-card-text .about-team-card-contact.second {
     border-bottom: 4px solid #E6E6F0;
@@ -723,6 +735,10 @@ footer .footer-mobile-text {
     font-size: 16px;
     color: #24A3FF;
     font-weight: 400;
+    transition: 0.85s;
+  }
+  .about-team .desktop .about-team-card-text ul.desktop li:nth-child(3):hover, .about-team .desktop .about-team-card-text ul.desktop li:nth-child(5):hover {
+    color: #F0145A;
   }
 }
 @media screen and (min-width: 1920px) {

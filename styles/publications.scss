@@ -215,6 +215,13 @@
             color: partial.$basic_white;
             font-size: partial.$font-s;
             font-weight: partial.$bold;
+            transition: 0.85s;
+        }
+        button:hover{
+            background-color: partial.$active_hover;
+        }
+        button:active{
+            background-color: #006CCF;
         }
     }
 }
